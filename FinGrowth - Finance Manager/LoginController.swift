@@ -17,6 +17,8 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var message: UILabel!
     
+    var dbRef: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +26,9 @@ class LoginController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         
         message.text = ""
-        // Do any additional setup after loading the view.
+        
+        //Connect with firebase database
+        dbRef = Database.database().reference()
     }
 
     @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
@@ -64,6 +68,56 @@ class LoginController: UIViewController {
                 
                 let userInfo = Auth.auth().currentUser
                 let userId = userInfo?.uid
+                
+                //Retrive all user data
+                self.dbRef.child("users").child(userId!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    // Get user value
+                    let value = snapshot.value as? NSDictionary
+                    let username = value?["username"] as? String ?? ""
+                    let dob = value?["dob"] as? String ?? ""
+                    let riskProfile = value?["riskProfile"] as? String ?? ""
+                    let user = User(username: username, dob: dob, risk: riskProfile)
+                    
+                    // Retrieve all wallets and transactions
+                    var walletList:[Wallet] = []
+                    var transactionList:[Transaction] = []
+                    
+                    // Get wallet data
+                    let walletsValue = snapshot.childSnapshot(forPath: "wallets").children.allObjects as! [DataSnapshot]
+                    for walletSnapshot in walletsValue {
+                        let nsWallet = walletSnapshot.value as? NSDictionary
+                        let walletName = nsWallet?["name"] as? String ?? ""
+                        let walletBal = nsWallet?["balance"] as? Double ?? 0
+                        let walletId = nsWallet?["id"] as? String ?? walletSnapshot.key
+                        let walletIcon = nsWallet?["icon"] as? String ?? ""
+                        let walletUser = nsWallet?["userId"] as? String ?? userId
+                        
+                        let wallet = Wallet(walletId: walletId, name: walletName, bal: walletBal, icon: walletIcon, userId: walletUser!)
+                        walletList.append(wallet)
+                        
+                        // Get transaction data
+                        let transactionsValue = snapshot.childSnapshot(forPath: "wallets").childSnapshot(forPath: walletId).childSnapshot(forPath: "transactions").children.allObjects as! [DataSnapshot]
+                        for transactionSnapshot in transactionsValue {
+                            let nsTransaction = transactionSnapshot.value as? NSDictionary
+                            let tName = nsTransaction?["name"] as? String ?? ""
+                            let tAmt = nsTransaction?["amount"] as? Double ?? 0
+                            let tCat = nsTransaction?["category"] as? String ?? "Unspecified Category"
+                            let tId = nsTransaction?["id"] as? String ?? ""
+                            let tIcon = nsTransaction?["icon"] as? String ?? ""
+                            let tTime = nsTransaction?["time"] as? String ?? "Time Unspecified"
+                            let tType = nsTransaction?["type"] as? String ?? ""
+                            let tWalletId = nsTransaction?["name"] as? String ?? walletId
+                            
+                            let transaction = Transaction(id: tId, name: tName, amt: tAmt, time: tTime, cat: tCat, type: tType, icon: tIcon, walletId: tWalletId)
+                            transactionList.append(transaction)
+                        }
+                    }
+                    
+                    print("Data loaded successfully!")
+                    
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
                 
                 //Navigate to main sotryboard -- show contents
                 let storyboard = UIStoryboard(name: "Content", bundle: nil)
