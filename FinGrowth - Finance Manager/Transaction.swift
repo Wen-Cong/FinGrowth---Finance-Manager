@@ -12,28 +12,25 @@ class Transaction{
     var time: String
     var category: String
     var type: String
-    var icon: String
     var walletId: String
     
-    init(name:String, amt:Double, time:String, cat:String, type:String, icon:String, walletId: String) {
+    init(name:String, amt:Double, time:String, cat:String, type:String, walletId: String) {
         self.transactionId = ""
         self.name = name
         self.amount = amt
         self.time = time
         self.category = cat
         self.type = type
-        self.icon = icon
         self.walletId = walletId
     }
 
-    init(id:String, name:String, amt:Double, time:String, cat:String, type:String, icon:String, walletId: String) {
+    init(id:String, name:String, amt:Double, time:String, cat:String, type:String, walletId: String) {
         self.transactionId = id
         self.name = name
         self.amount = amt
         self.time = time
         self.category = cat
         self.type = type
-        self.icon = icon
         self.walletId = walletId
     }
     

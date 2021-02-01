@@ -12,6 +12,8 @@ target 'FinGrowth - Finance Manager' do
 
   pod 'Firebase/Database'
 
+  pod 'Firebase/Storage'
+
   target 'FinGrowth - Finance ManagerTests' do
     inherit! :search_paths
     # Pods for testing

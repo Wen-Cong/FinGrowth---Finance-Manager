@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0932F1FC25C69CC000555F93 /* walletIcon-Cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0932F1F725C69CBF00555F93 /* walletIcon-Cash.png */; };
+		0932F1FD25C69CC000555F93 /* walletIcon-Savings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0932F1F825C69CBF00555F93 /* walletIcon-Savings.png */; };
+		0932F1FE25C69CC000555F93 /* walletIcon-Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 0932F1F925C69CBF00555F93 /* walletIcon-Card.png */; };
+		0932F1FF25C69CC000555F93 /* walletIcon-Safe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0932F1FA25C69CBF00555F93 /* walletIcon-Safe.png */; };
+		0932F20025C69CC000555F93 /* walletIcon-Money Bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 0932F1FB25C69CC000555F93 /* walletIcon-Money Bag.png */; };
+		094C452925C8110F00C61BB1 /* WalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C452825C8110F00C61BB1 /* WalletTableViewController.swift */; };
+		094C452F25C82B5D00C61BB1 /* expenses.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C452D25C82B5C00C61BB1 /* expenses.png */; };
+		094C453025C82B5D00C61BB1 /* income.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C452E25C82B5D00C61BB1 /* income.png */; };
+		094C453525C82C6300C61BB1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C453425C82C6300C61BB1 /* HomeController.swift */; };
+		094C454125C8697800C61BB1 /* transactionIcon-Salary.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453925C8697800C61BB1 /* transactionIcon-Salary.png */; };
+		094C454225C8697800C61BB1 /* transactionIcon-Shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453A25C8697800C61BB1 /* transactionIcon-Shopping.png */; };
+		094C454325C8697800C61BB1 /* transactionIcon-Investment.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453B25C8697800C61BB1 /* transactionIcon-Investment.png */; };
+		094C454425C8697800C61BB1 /* transactionIcon-Utility.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453C25C8697800C61BB1 /* transactionIcon-Utility.png */; };
+		094C454525C8697800C61BB1 /* transactionIcon-Others.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453D25C8697800C61BB1 /* transactionIcon-Others.png */; };
+		094C454625C8697800C61BB1 /* transactionIcon-Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453E25C8697800C61BB1 /* transactionIcon-Food.png */; };
+		094C454725C8697800C61BB1 /* transactionIcon-Entertainment.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453F25C8697800C61BB1 /* transactionIcon-Entertainment.png */; };
+		094C454825C8697800C61BB1 /* transactionIcon-Transport.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C454025C8697800C61BB1 /* transactionIcon-Transport.png */; };
+		094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */; };
+		095BE34425C2A46200F1ABCE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE34325C2A46200F1ABCE /* profile.png */; };
+		095BE35325C2AACC00F1ABCE /* edit_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE35225C2AACC00F1ABCE /* edit_profile.png */; };
+		095BE36125C2AC6800F1ABCE /* take_assessment.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36025C2AC6800F1ABCE /* take_assessment.png */; };
+		095BE36C25C2C26A00F1ABCE /* aggressiveInvestor.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36825C2C26A00F1ABCE /* aggressiveInvestor.png */; };
+		095BE36D25C2C26A00F1ABCE /* balancedInvestor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36925C2C26A00F1ABCE /* balancedInvestor.jpg */; };
+		095BE36E25C2C26A00F1ABCE /* conservativeInvestor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36A25C2C26A00F1ABCE /* conservativeInvestor.jpg */; };
+		095BE36F25C2C26A00F1ABCE /* noProfile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36B25C2C26A00F1ABCE /* noProfile.jpg */; };
 		097F52F925AFE30E0033E127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F52F825AFE30E0033E127 /* AppDelegate.swift */; };
 		097F52FB25AFE30E0033E127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F52FA25AFE30E0033E127 /* SceneDelegate.swift */; };
 		097F52FD25AFE30E0033E127 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F52FC25AFE30E0033E127 /* LoginController.swift */; };
@@ -16,6 +41,11 @@
 		097F530825AFE3150033E127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F530625AFE3150033E127 /* LaunchScreen.storyboard */; };
 		097F531325AFE3150033E127 /* FinGrowth___Finance_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F531225AFE3150033E127 /* FinGrowth___Finance_ManagerTests.swift */; };
 		097F531E25AFE3150033E127 /* FinGrowth___Finance_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F531D25AFE3150033E127 /* FinGrowth___Finance_ManagerUITests.swift */; };
+		0987C78925C3C888009516F6 /* RiskProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987C78825C3C888009516F6 /* RiskProfileController.swift */; };
+		0987C79B25C3F96A009516F6 /* balancedAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C79825C3F96A009516F6 /* balancedAllocation.png */; };
+		0987C7AA25C3FACA009516F6 /* aggressiveAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */; };
+		0987C7AB25C3FACA009516F6 /* conservativeAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C7A925C3FACA009516F6 /* conservativeAllocation.png */; };
+		09B06E1F25C7DDFC00AFBCA3 /* AddTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B06E1E25C7DDFC00AFBCA3 /* AddTransactionController.swift */; };
 		09BC671D25C05D14003DC9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BC671C25C05D14003DC9A4 /* Main.storyboard */; };
 		09BC672325C05FBB003DC9A4 /* login_illustration.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BC672225C05FBB003DC9A4 /* login_illustration.png */; };
 		09BC672E25C06794003DC9A4 /* mystocks_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BC672725C06794003DC9A4 /* mystocks_logo.png */; };
@@ -34,6 +64,10 @@
 		09BC677725C11886003DC9A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC677625C11886003DC9A4 /* Post.swift */; };
 		09BC677E25C11CD4003DC9A4 /* cash_wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BC677D25C11CD4003DC9A4 /* cash_wallet.png */; };
 		09BC678325C11F30003DC9A4 /* cat-other.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BC678225C11F30003DC9A4 /* cat-other.png */; };
+		09D159D225C448E800085050 /* analysis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D159D125C448E800085050 /* analysis.jpg */; };
+		09D159D725C4495800085050 /* AssetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D159D625C4495800085050 /* AssetsController.swift */; };
+		09D159DC25C4545B00085050 /* AddWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D159DB25C4545B00085050 /* AddWalletController.swift */; };
+		09D4F53825C2545E002F383A /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4F53725C2545E002F383A /* ProfileController.swift */; };
 		1264016E7476DEB6551424E4 /* libPods-FinGrowth - Finance Manager-FinGrowth - Finance ManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A616131774C74E4B4B76D62D /* libPods-FinGrowth - Finance Manager-FinGrowth - Finance ManagerUITests.a */; };
 		3774A2A5944994BB64490610 /* libPods-FinGrowth - Finance Manager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C75C3CF18F4219D92EE4D017 /* libPods-FinGrowth - Finance Manager.a */; };
 		9A322EDE77F8F6746D07B816 /* libPods-FinGrowth - Finance ManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83E005E30071F163AA28696 /* libPods-FinGrowth - Finance ManagerTests.a */; };
@@ -57,6 +91,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0932F1F725C69CBF00555F93 /* walletIcon-Cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletIcon-Cash.png"; sourceTree = "<group>"; };
+		0932F1F825C69CBF00555F93 /* walletIcon-Savings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletIcon-Savings.png"; sourceTree = "<group>"; };
+		0932F1F925C69CBF00555F93 /* walletIcon-Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletIcon-Card.png"; sourceTree = "<group>"; };
+		0932F1FA25C69CBF00555F93 /* walletIcon-Safe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletIcon-Safe.png"; sourceTree = "<group>"; };
+		0932F1FB25C69CC000555F93 /* walletIcon-Money Bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walletIcon-Money Bag.png"; sourceTree = "<group>"; };
+		094C452825C8110F00C61BB1 /* WalletTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewController.swift; sourceTree = "<group>"; };
+		094C452D25C82B5C00C61BB1 /* expenses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expenses.png; sourceTree = "<group>"; };
+		094C452E25C82B5D00C61BB1 /* income.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = income.png; sourceTree = "<group>"; };
+		094C453425C82C6300C61BB1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		094C453925C8697800C61BB1 /* transactionIcon-Salary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Salary.png"; sourceTree = "<group>"; };
+		094C453A25C8697800C61BB1 /* transactionIcon-Shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Shopping.png"; sourceTree = "<group>"; };
+		094C453B25C8697800C61BB1 /* transactionIcon-Investment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Investment.png"; sourceTree = "<group>"; };
+		094C453C25C8697800C61BB1 /* transactionIcon-Utility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Utility.png"; sourceTree = "<group>"; };
+		094C453D25C8697800C61BB1 /* transactionIcon-Others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Others.png"; sourceTree = "<group>"; };
+		094C453E25C8697800C61BB1 /* transactionIcon-Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Food.png"; sourceTree = "<group>"; };
+		094C453F25C8697800C61BB1 /* transactionIcon-Entertainment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Entertainment.png"; sourceTree = "<group>"; };
+		094C454025C8697800C61BB1 /* transactionIcon-Transport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Transport.png"; sourceTree = "<group>"; };
+		094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsController.swift; sourceTree = "<group>"; };
+		095BE34325C2A46200F1ABCE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		095BE35225C2AACC00F1ABCE /* edit_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_profile.png; sourceTree = "<group>"; };
+		095BE36025C2AC6800F1ABCE /* take_assessment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_assessment.png; sourceTree = "<group>"; };
+		095BE36825C2C26A00F1ABCE /* aggressiveInvestor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aggressiveInvestor.png; sourceTree = "<group>"; };
+		095BE36925C2C26A00F1ABCE /* balancedInvestor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balancedInvestor.jpg; sourceTree = "<group>"; };
+		095BE36A25C2C26A00F1ABCE /* conservativeInvestor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = conservativeInvestor.jpg; sourceTree = "<group>"; };
+		095BE36B25C2C26A00F1ABCE /* noProfile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noProfile.jpg; sourceTree = "<group>"; };
 		097F52F525AFE30E0033E127 /* FinGrowth - Finance Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinGrowth - Finance Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		097F52F825AFE30E0033E127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097F52FA25AFE30E0033E127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +131,11 @@
 		097F531925AFE3150033E127 /* FinGrowth - Finance ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FinGrowth - Finance ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		097F531D25AFE3150033E127 /* FinGrowth___Finance_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinGrowth___Finance_ManagerUITests.swift"; sourceTree = "<group>"; };
 		097F531F25AFE3150033E127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0987C78825C3C888009516F6 /* RiskProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskProfileController.swift; sourceTree = "<group>"; };
+		0987C79825C3F96A009516F6 /* balancedAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balancedAllocation.png; sourceTree = "<group>"; };
+		0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aggressiveAllocation.png; sourceTree = "<group>"; };
+		0987C7A925C3FACA009516F6 /* conservativeAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conservativeAllocation.png; sourceTree = "<group>"; };
+		09B06E1E25C7DDFC00AFBCA3 /* AddTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionController.swift; sourceTree = "<group>"; };
 		09BC671C25C05D14003DC9A4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		09BC672225C05FBB003DC9A4 /* login_illustration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_illustration.png; sourceTree = "<group>"; };
 		09BC672725C06794003DC9A4 /* mystocks_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mystocks_logo.png; sourceTree = "<group>"; };
@@ -90,6 +154,10 @@
 		09BC677625C11886003DC9A4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		09BC677D25C11CD4003DC9A4 /* cash_wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash_wallet.png; sourceTree = "<group>"; };
 		09BC678225C11F30003DC9A4 /* cat-other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-other.png"; sourceTree = "<group>"; };
+		09D159D125C448E800085050 /* analysis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = analysis.jpg; sourceTree = "<group>"; };
+		09D159D625C4495800085050 /* AssetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsController.swift; sourceTree = "<group>"; };
+		09D159DB25C4545B00085050 /* AddWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletController.swift; sourceTree = "<group>"; };
+		09D4F53725C2545E002F383A /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		0DB158A6FF36AACCFDEE6F59 /* Pods-FinGrowth - Finance ManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance ManagerTests.release.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance ManagerTests/Pods-FinGrowth - Finance ManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		1E676C154E73C18DA13EB2F2 /* Pods-FinGrowth - Finance Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance Manager.release.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance Manager/Pods-FinGrowth - Finance Manager.release.xcconfig"; sourceTree = "<group>"; };
 		62E73199BA30F2E3746DBA1B /* Pods-FinGrowth - Finance ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance ManagerTests/Pods-FinGrowth - Finance ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +240,14 @@
 				09BC676C25C11461003DC9A4 /* Transaction.swift */,
 				09BC677125C11765003DC9A4 /* Stocks.swift */,
 				09BC677625C11886003DC9A4 /* Post.swift */,
+				09D4F53725C2545E002F383A /* ProfileController.swift */,
+				0987C78825C3C888009516F6 /* RiskProfileController.swift */,
+				09D159D625C4495800085050 /* AssetsController.swift */,
+				09D159DB25C4545B00085050 /* AddWalletController.swift */,
+				09B06E1E25C7DDFC00AFBCA3 /* AddTransactionController.swift */,
+				094C452825C8110F00C61BB1 /* WalletTableViewController.swift */,
+				094C453425C82C6300C61BB1 /* HomeController.swift */,
+				094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */,
 			);
 			path = "FinGrowth - Finance Manager";
 			sourceTree = "<group>";
@@ -197,6 +273,24 @@
 		09BC677B25C11AEE003DC9A4 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				094C453F25C8697800C61BB1 /* transactionIcon-Entertainment.png */,
+				094C453E25C8697800C61BB1 /* transactionIcon-Food.png */,
+				094C453B25C8697800C61BB1 /* transactionIcon-Investment.png */,
+				094C453D25C8697800C61BB1 /* transactionIcon-Others.png */,
+				094C453925C8697800C61BB1 /* transactionIcon-Salary.png */,
+				094C453A25C8697800C61BB1 /* transactionIcon-Shopping.png */,
+				094C454025C8697800C61BB1 /* transactionIcon-Transport.png */,
+				094C453C25C8697800C61BB1 /* transactionIcon-Utility.png */,
+				094C452D25C82B5C00C61BB1 /* expenses.png */,
+				094C452E25C82B5D00C61BB1 /* income.png */,
+				0932F1F925C69CBF00555F93 /* walletIcon-Card.png */,
+				0932F1F725C69CBF00555F93 /* walletIcon-Cash.png */,
+				0932F1FB25C69CC000555F93 /* walletIcon-Money Bag.png */,
+				0932F1FA25C69CBF00555F93 /* walletIcon-Safe.png */,
+				0932F1F825C69CBF00555F93 /* walletIcon-Savings.png */,
+				095BE36025C2AC6800F1ABCE /* take_assessment.png */,
+				095BE35225C2AACC00F1ABCE /* edit_profile.png */,
+				095BE34325C2A46200F1ABCE /* profile.png */,
 				09BC678225C11F30003DC9A4 /* cat-other.png */,
 				09BC677D25C11CD4003DC9A4 /* cash_wallet.png */,
 			);
@@ -206,6 +300,14 @@
 		09BC677C25C11B03003DC9A4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09D159D125C448E800085050 /* analysis.jpg */,
+				0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */,
+				0987C7A925C3FACA009516F6 /* conservativeAllocation.png */,
+				0987C79825C3F96A009516F6 /* balancedAllocation.png */,
+				095BE36825C2C26A00F1ABCE /* aggressiveInvestor.png */,
+				095BE36925C2C26A00F1ABCE /* balancedInvestor.jpg */,
+				095BE36A25C2C26A00F1ABCE /* conservativeInvestor.jpg */,
+				095BE36B25C2C26A00F1ABCE /* noProfile.jpg */,
 				09BC672925C06794003DC9A4 /* newtransaction_illustration.png */,
 				09BC672C25C06794003DC9A4 /* newwallet_illustration.png */,
 				09BC672825C06794003DC9A4 /* signup_illustration.png */,
@@ -347,21 +449,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094C454225C8697800C61BB1 /* transactionIcon-Shopping.png in Resources */,
 				09BC674C25C07E2A003DC9A4 /* GoogleService-Info.plist in Resources */,
+				094C454125C8697800C61BB1 /* transactionIcon-Salary.png in Resources */,
+				0987C7AA25C3FACA009516F6 /* aggressiveAllocation.png in Resources */,
 				097F530825AFE3150033E127 /* LaunchScreen.storyboard in Resources */,
 				09BC672F25C06794003DC9A4 /* signup_illustration.png in Resources */,
 				09BC672325C05FBB003DC9A4 /* login_illustration.png in Resources */,
 				09BC673025C06794003DC9A4 /* newtransaction_illustration.png in Resources */,
 				09BC673325C06794003DC9A4 /* newwallet_illustration.png in Resources */,
+				094C454825C8697800C61BB1 /* transactionIcon-Transport.png in Resources */,
+				095BE36E25C2C26A00F1ABCE /* conservativeInvestor.jpg in Resources */,
 				097F530525AFE3150033E127 /* Assets.xcassets in Resources */,
+				095BE36C25C2C26A00F1ABCE /* aggressiveInvestor.png in Resources */,
+				094C452F25C82B5D00C61BB1 /* expenses.png in Resources */,
 				097F530025AFE30E0033E127 /* Content.storyboard in Resources */,
+				094C454325C8697800C61BB1 /* transactionIcon-Investment.png in Resources */,
+				094C454625C8697800C61BB1 /* transactionIcon-Food.png in Resources */,
+				09D159D225C448E800085050 /* analysis.jpg in Resources */,
 				09BC677E25C11CD4003DC9A4 /* cash_wallet.png in Resources */,
 				09BC673425C06794003DC9A4 /* newpost_illustration.png in Resources */,
+				0932F20025C69CC000555F93 /* walletIcon-Money Bag.png in Resources */,
+				095BE35325C2AACC00F1ABCE /* edit_profile.png in Resources */,
+				0932F1FD25C69CC000555F93 /* walletIcon-Savings.png in Resources */,
+				0932F1FF25C69CC000555F93 /* walletIcon-Safe.png in Resources */,
 				09BC671D25C05D14003DC9A4 /* Main.storyboard in Resources */,
+				0987C7AB25C3FACA009516F6 /* conservativeAllocation.png in Resources */,
+				094C454525C8697800C61BB1 /* transactionIcon-Others.png in Resources */,
+				094C453025C82B5D00C61BB1 /* income.png in Resources */,
 				09BC678325C11F30003DC9A4 /* cat-other.png in Resources */,
 				09BC672E25C06794003DC9A4 /* mystocks_logo.png in Resources */,
 				09BC673125C06794003DC9A4 /* newstocks_illustration.png in Resources */,
 				09BC673225C06794003DC9A4 /* wallet_logo.png in Resources */,
+				0932F1FC25C69CC000555F93 /* walletIcon-Cash.png in Resources */,
+				095BE36F25C2C26A00F1ABCE /* noProfile.jpg in Resources */,
+				0932F1FE25C69CC000555F93 /* walletIcon-Card.png in Resources */,
+				094C454725C8697800C61BB1 /* transactionIcon-Entertainment.png in Resources */,
+				094C454425C8697800C61BB1 /* transactionIcon-Utility.png in Resources */,
+				095BE34425C2A46200F1ABCE /* profile.png in Resources */,
+				0987C79B25C3F96A009516F6 /* balancedAllocation.png in Resources */,
+				095BE36125C2AC6800F1ABCE /* take_assessment.png in Resources */,
+				095BE36D25C2C26A00F1ABCE /* balancedInvestor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,13 +586,21 @@
 				097F52FD25AFE30E0033E127 /* LoginController.swift in Sources */,
 				09BC676825C11335003DC9A4 /* Wallet.swift in Sources */,
 				09BC676D25C11461003DC9A4 /* Transaction.swift in Sources */,
+				094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */,
 				097F52F925AFE30E0033E127 /* AppDelegate.swift in Sources */,
 				09BC677225C11765003DC9A4 /* Stocks.swift in Sources */,
+				09D159D725C4495800085050 /* AssetsController.swift in Sources */,
+				09D159DC25C4545B00085050 /* AddWalletController.swift in Sources */,
 				09BC674125C07797003DC9A4 /* User.swift in Sources */,
+				094C453525C82C6300C61BB1 /* HomeController.swift in Sources */,
 				097F52FB25AFE30E0033E127 /* SceneDelegate.swift in Sources */,
+				09D4F53825C2545E002F383A /* ProfileController.swift in Sources */,
+				094C452925C8110F00C61BB1 /* WalletTableViewController.swift in Sources */,
+				0987C78925C3C888009516F6 /* RiskProfileController.swift in Sources */,
 				09BC673C25C06BDF003DC9A4 /* SignupController.swift in Sources */,
 				097F530325AFE30E0033E127 /* FinGrowth___Finance_Manager.xcdatamodeld in Sources */,
 				09BC677725C11886003DC9A4 /* Post.swift in Sources */,
+				09B06E1F25C7DDFC00AFBCA3 /* AddTransactionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

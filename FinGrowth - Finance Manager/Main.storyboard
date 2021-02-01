@@ -39,20 +39,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFb-eo-tuF">
-                                <rect key="frame" x="104" y="711" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFb-eo-tuF">
+                                <rect key="frame" x="80" y="711" width="133" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4i-KR-D8q">
-                                <rect key="frame" x="245" y="705" width="67" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4i-KR-D8q">
+                                <rect key="frame" x="221" y="705" width="67" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.42049066410349661" green="0.18855660092204429" blue="0.69859398735894096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OeM-Vb-Mjz" kind="show" id="VZW-NF-A4X"/>
+                                    <segue destination="OeM-Vb-Mjz" kind="show" id="vbX-t3-YkZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-8z-ji3">
@@ -63,7 +63,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzB-BI-kvj">
                                 <rect key="frame" x="50" y="654.33333333333337" width="290" height="48.666666666666629"/>
-                                <color key="backgroundColor" red="0.42049066410349661" green="0.18855660092204429" blue="0.69859398735894096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.45737481120000001" green="0.1402367353" blue="0.72553139929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48.619999999999997" id="1SE-lN-v8e"/>
                                 </constraints>
@@ -88,13 +88,11 @@
                             <constraint firstItem="mKC-ij-oj5" firstAttribute="leading" secondItem="2yF-QE-6GM" secondAttribute="leading" constant="50" id="O3W-CJ-XmQ"/>
                             <constraint firstItem="fEI-gN-09f" firstAttribute="leading" secondItem="2yF-QE-6GM" secondAttribute="leading" constant="50" id="Tmj-U9-1Y1"/>
                             <constraint firstItem="Ms9-8z-ji3" firstAttribute="leading" secondItem="2yF-QE-6GM" secondAttribute="leading" constant="50" id="ZIw-CO-88x"/>
-                            <constraint firstItem="KFb-eo-tuF" firstAttribute="leading" secondItem="2yF-QE-6GM" secondAttribute="leading" constant="104" id="cRt-iP-uhM"/>
                             <constraint firstItem="qKZ-oi-ord" firstAttribute="leading" secondItem="2yF-QE-6GM" secondAttribute="leading" constant="50" id="dAi-Ic-AXC"/>
                             <constraint firstItem="KFb-eo-tuF" firstAttribute="top" secondItem="pzB-BI-kvj" secondAttribute="bottom" constant="8" id="dxS-Sp-CNW"/>
                             <constraint firstItem="2yF-QE-6GM" firstAttribute="trailing" secondItem="pzB-BI-kvj" secondAttribute="trailing" constant="50" id="etw-Zi-PLv"/>
                             <constraint firstItem="fEI-gN-09f" firstAttribute="top" secondItem="mKC-ij-oj5" secondAttribute="bottom" constant="46" id="gOv-he-frQ"/>
                             <constraint firstItem="d4i-KR-D8q" firstAttribute="leading" secondItem="KFb-eo-tuF" secondAttribute="trailing" constant="8" id="gQT-AB-hJm"/>
-                            <constraint firstItem="d4i-KR-D8q" firstAttribute="leading" secondItem="KFb-eo-tuF" secondAttribute="trailing" constant="8" id="gdy-k2-pwA"/>
                             <constraint firstItem="Ms9-8z-ji3" firstAttribute="top" secondItem="fEI-gN-09f" secondAttribute="bottom" constant="8" id="lAu-Da-fBe"/>
                             <constraint firstItem="2yF-QE-6GM" firstAttribute="trailing" secondItem="mKC-ij-oj5" secondAttribute="trailing" constant="50" id="nr5-tE-woX"/>
                             <constraint firstItem="2yF-QE-6GM" firstAttribute="trailing" secondItem="d4i-KR-D8q" secondAttribute="trailing" constant="102" id="o4B-g8-8U5"/>
@@ -252,7 +250,7 @@
         <!--Login-->
         <scene sceneID="QZT-H4-IwH">
             <objects>
-                <navigationController title="Login" automaticallyAdjustsScrollViewInsets="NO" id="iKD-dg-Zz4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="login" title="Login" automaticallyAdjustsScrollViewInsets="NO" id="iKD-dg-Zz4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Le9-CR-YTL">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -267,28 +265,7 @@
             </objects>
             <point key="canvasLocation" x="355.07246376811599" y="131.91964285714286"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="kCd-Po-1ZY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GeM-kl-j2B" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="50C-IZ-LZs">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="OeM-Vb-Mjz" kind="relationship" relationship="rootViewController" id="FPL-PR-aHh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lUi-MX-CyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="353.62318840579712" y="819.64285714285711"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="VZW-NF-A4X"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="login_illustration.png" width="414" height="292"/>
         <image name="signup_illustration.png" width="389" height="249"/>

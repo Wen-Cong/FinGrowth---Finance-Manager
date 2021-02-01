@@ -76,7 +76,9 @@ class LoginController: UIViewController {
                     let username = value?["username"] as? String ?? ""
                     let dob = value?["dob"] as? String ?? ""
                     let riskProfile = value?["riskProfile"] as? String ?? ""
-                    let user = User(username: username, dob: dob, risk: riskProfile)
+                    
+                    var appDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.user = User(username: username, dob: dob, risk: riskProfile)
                     
                     // Retrieve all wallets and transactions
                     var walletList:[Wallet] = []
@@ -103,16 +105,17 @@ class LoginController: UIViewController {
                             let tAmt = nsTransaction?["amount"] as? Double ?? 0
                             let tCat = nsTransaction?["category"] as? String ?? "Unspecified Category"
                             let tId = nsTransaction?["id"] as? String ?? ""
-                            let tIcon = nsTransaction?["icon"] as? String ?? ""
                             let tTime = nsTransaction?["time"] as? String ?? "Time Unspecified"
                             let tType = nsTransaction?["type"] as? String ?? ""
                             let tWalletId = nsTransaction?["name"] as? String ?? walletId
                             
-                            let transaction = Transaction(id: tId, name: tName, amt: tAmt, time: tTime, cat: tCat, type: tType, icon: tIcon, walletId: tWalletId)
+                            let transaction = Transaction(id: tId, name: tName, amt: tAmt, time: tTime, cat: tCat, type: tType, walletId: tWalletId)
                             transactionList.append(transaction)
                         }
                     }
                     
+                    appDelegate.transactionList = transactionList
+                    appDelegate.walletList = walletList
                     print("Data loaded successfully!")
                     
                 }) { (error) in

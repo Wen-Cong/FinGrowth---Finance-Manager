@@ -100,7 +100,7 @@ class SignupController: UIViewController {
                     let walletRef = self.dbRef.child("users").child("\(userId!)").child("wallets").childByAutoId()
                     let walletKey = walletRef.key
                     
-                    let wallet: NSDictionary = ["id": "\(walletKey!)", "name": "Cash Wallet", "balance": 0, "icon": "cash_wallet.png", "userId": "\(userId!)"]
+                    let wallet: NSDictionary = ["id": "\(walletKey!)", "name": "Cash Wallet", "balance": 0, "icon": "Cash", "userId": "\(userId!)"]
                     walletRef.setValue(wallet)
                     
                     //Initialize transaction
@@ -108,7 +108,7 @@ class SignupController: UIViewController {
                         .child("\(walletKey!)").child("transactions").childByAutoId()
                     let tKey = tRef.key
                     
-                    let transaction: NSDictionary = ["id": "\(tKey!)", "name": "Create Wallet", "amount": 0, "time": "\(Date.init())", "category": "Other", "type": "Initialization", "icon": "cat-other.png", "walletId": "\(walletKey!)"]
+                    let transaction: NSDictionary = ["id": "\(tKey!)", "name": "Create Wallet", "amount": 0, "time": "\(Date.init())", "category": "Others", "type": "Initialization", "walletId": "\(walletKey!)"]
                     tRef.setValue(transaction)
                     
                     self.message.textColor = .green
