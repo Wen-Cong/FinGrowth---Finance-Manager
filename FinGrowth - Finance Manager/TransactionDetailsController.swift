@@ -15,6 +15,9 @@ class TransactionDetailsController: UIViewController {
     var transaction:Transaction? = nil
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    let userId = Auth.auth().currentUser?.uid
+    let dbRef = Database.database().reference()
+    
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var catLabel: UILabel!
@@ -77,28 +80,26 @@ class TransactionDetailsController: UIViewController {
     
     @IBAction func deletebtn(_ sender: Any) {
         if (transaction != nil){
-            let userId = Auth.auth().currentUser?.uid
-            let dbRef = Database.database().reference()
-            
             // Recover wallet balance
             var amount = transaction?.amount
             if transaction?.type == "Expense" {
-                amount = (amount ?? 0) * (-1)
+                amount = (amount!) * (-1)
             }
             for w in appDelegate.walletList {
                 if w.walletId == transaction?.walletId {
-                    let newAmount = (w.balance) - (amount ?? 0)
+                    let newAmount = (w.balance) - (amount!)
                     w.balance = newAmount
                     dbRef.child("users").child("\(userId!)").child("wallets")
-                        .child("\(w.walletId)").child("balance").setValue(newAmount)
+                        .child("\(transaction!.walletId)").child("balance").setValue(newAmount)
+                    
                     break
                 }
             }
             
             // Delete transactions in current app data & firebase
             for i in 0...(self.appDelegate.transactionList.count - 1) {
+                let t = self.appDelegate.transactionList[i]
                 if self.appDelegate.transactionList[i].transactionId == transaction?.transactionId{
-                    let t = self.appDelegate.transactionList[i]
                     self.appDelegate.transactionList.remove(at: i)
                     
                     //Delete Data from Firebase
@@ -106,7 +107,7 @@ class TransactionDetailsController: UIViewController {
                         .child("\(t.walletId)").child("transactions").child("\(t.transactionId)").removeValue(completionBlock: {error, ref in
                             if error == nil {
                                 // Successfully deleted
-                                _ = self.navigationController?.popViewController(animated: true)
+                                _ = self.navigationController?.popToRootViewController(animated: true)
                             }
                             else{
                                 print("Error deleting firabase data: \(String(describing: error))")

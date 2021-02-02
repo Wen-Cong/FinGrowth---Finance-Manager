@@ -107,7 +107,7 @@ class LoginController: UIViewController {
                             let tId = nsTransaction?["id"] as? String ?? ""
                             let tTime = nsTransaction?["time"] as? String ?? "Time Unspecified"
                             let tType = nsTransaction?["type"] as? String ?? ""
-                            let tWalletId = nsTransaction?["name"] as? String ?? walletId
+                            let tWalletId = nsTransaction?["walletId"] as? String ?? walletId
                             
                             let transaction = Transaction(id: tId, name: tName, amt: tAmt, time: tTime, cat: tCat, type: tType, walletId: tWalletId)
                             transactionList.append(transaction)
