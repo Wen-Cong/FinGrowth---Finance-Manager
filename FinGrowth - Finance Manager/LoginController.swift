@@ -80,9 +80,25 @@ class LoginController: UIViewController {
                     var appDelegate = UIApplication.shared.delegate as! AppDelegate
                     appDelegate.user = User(username: username, dob: dob, risk: riskProfile)
                     
-                    // Retrieve all wallets and transactions
+                    // Retrieve all wallets, transactions & stocks
                     var walletList:[Wallet] = []
                     var transactionList:[Transaction] = []
+                    var stockList:[Stocks] = []
+                    
+                    // Get stocks data
+                    let stocksValue = snapshot.childSnapshot(forPath: "stocks").children.allObjects as! [DataSnapshot]
+                    for stocksSnapshot in stocksValue {
+                        let nsStocks = stocksSnapshot.value as? NSDictionary
+                        let stocksName = nsStocks?["name"] as? String ?? ""
+                        let stocksSymbol = (nsStocks?["symbol"] as? String)?.capitalized ?? ""
+                        let priceBought = nsStocks?["priceBought"] as? Double ?? 0
+                        let stocksQty = nsStocks?["quantity"] as? Int ?? 0
+                        let stocksDate = nsStocks?["date"] as? String ?? ""
+                        let stocksId = nsStocks?["id"] as? String ?? stocksSnapshot.key
+                        
+                        let stocks = Stocks(id: stocksId, name: stocksName, symbol: stocksSymbol, qty: stocksQty, priceBought: priceBought, date: stocksDate)
+                        stockList.append(stocks)
+                    }
                     
                     // Get wallet data
                     let walletsValue = snapshot.childSnapshot(forPath: "wallets").children.allObjects as! [DataSnapshot]
@@ -116,6 +132,7 @@ class LoginController: UIViewController {
                     
                     appDelegate.transactionList = transactionList
                     appDelegate.walletList = walletList
+                    appDelegate.stocksList = stockList
                     print("Data loaded successfully!")
                     
                 }) { (error) in

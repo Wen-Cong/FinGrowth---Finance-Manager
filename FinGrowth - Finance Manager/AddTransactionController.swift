@@ -51,9 +51,6 @@ class AddTransactionController: UIViewController, UIPickerViewDelegate, UIPicker
         applyTextFieldStyle(field: typeFld)
         addBtn.layer.cornerRadius = 22
         
-        // Get wallets
-        walletList = appDelegate.walletList
-        
         // Init picker view
         walletPickerView.delegate = self
         categoryPickerView.delegate = self
@@ -69,6 +66,9 @@ class AddTransactionController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         messageLabel.text = ""
+        
+        // Get wallets
+        walletList = appDelegate.walletList
     }
     
     // Add border, shadow and corner design to view

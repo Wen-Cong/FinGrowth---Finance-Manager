@@ -26,6 +26,8 @@
 		094C454825C8697800C61BB1 /* transactionIcon-Transport.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C454025C8697800C61BB1 /* transactionIcon-Transport.png */; };
 		094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */; };
 		0957ADB025C94D9700DDE72A /* maintanace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0957ADAF25C94D9600DDE72A /* maintanace.jpg */; };
+		0957ADB525C962CB00DDE72A /* AddStocksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957ADB425C962CB00DDE72A /* AddStocksController.swift */; };
+		0957ADBA25C972D600DDE72A /* StocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957ADB925C972D600DDE72A /* StocksTableViewController.swift */; };
 		095BE34425C2A46200F1ABCE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE34325C2A46200F1ABCE /* profile.png */; };
 		095BE35325C2AACC00F1ABCE /* edit_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE35225C2AACC00F1ABCE /* edit_profile.png */; };
 		095BE36125C2AC6800F1ABCE /* take_assessment.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36025C2AC6800F1ABCE /* take_assessment.png */; };
@@ -112,6 +114,8 @@
 		094C454025C8697800C61BB1 /* transactionIcon-Transport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Transport.png"; sourceTree = "<group>"; };
 		094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsController.swift; sourceTree = "<group>"; };
 		0957ADAF25C94D9600DDE72A /* maintanace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maintanace.jpg; sourceTree = "<group>"; };
+		0957ADB425C962CB00DDE72A /* AddStocksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStocksController.swift; sourceTree = "<group>"; };
+		0957ADB925C972D600DDE72A /* StocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewController.swift; sourceTree = "<group>"; };
 		095BE34325C2A46200F1ABCE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		095BE35225C2AACC00F1ABCE /* edit_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_profile.png; sourceTree = "<group>"; };
 		095BE36025C2AC6800F1ABCE /* take_assessment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_assessment.png; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 				094C453425C82C6300C61BB1 /* HomeController.swift */,
 				094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */,
 				09A0445225C9182600A10430 /* AssessmentController.swift */,
+				0957ADB425C962CB00DDE72A /* AddStocksController.swift */,
+				0957ADB925C972D600DDE72A /* StocksTableViewController.swift */,
 			);
 			path = "FinGrowth - Finance Manager";
 			sourceTree = "<group>";
@@ -590,10 +596,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957ADB525C962CB00DDE72A /* AddStocksController.swift in Sources */,
 				097F52FD25AFE30E0033E127 /* LoginController.swift in Sources */,
 				09BC676825C11335003DC9A4 /* Wallet.swift in Sources */,
 				09BC676D25C11461003DC9A4 /* Transaction.swift in Sources */,
 				094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */,
+				0957ADBA25C972D600DDE72A /* StocksTableViewController.swift in Sources */,
 				09A0445325C9182600A10430 /* AssessmentController.swift in Sources */,
 				097F52F925AFE30E0033E127 /* AppDelegate.swift in Sources */,
 				09BC677225C11765003DC9A4 /* Stocks.swift in Sources */,

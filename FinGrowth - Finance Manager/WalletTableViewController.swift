@@ -48,7 +48,9 @@ class WalletTableViewController:UITableViewController{
         cell.titleLabel?.text = wallet.name
         cell.balLabel?.text = "$\(wallet.balance)"
         let iconPath = Bundle.main.path(forResource: "walletIcon-\(wallet.walletIcon)", ofType: "png")
-        cell.iconImage?.image = UIImage(contentsOfFile: iconPath!)
+        
+        let altIconPath = Bundle.main.path(forResource: "noProfile", ofType: "jpg")!
+        cell.iconImage?.image = UIImage(contentsOfFile: iconPath ?? altIconPath)
         
         return cell
     }
