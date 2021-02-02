@@ -45,6 +45,7 @@
 		0987C79B25C3F96A009516F6 /* balancedAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C79825C3F96A009516F6 /* balancedAllocation.png */; };
 		0987C7AA25C3FACA009516F6 /* aggressiveAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */; };
 		0987C7AB25C3FACA009516F6 /* conservativeAllocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0987C7A925C3FACA009516F6 /* conservativeAllocation.png */; };
+		09A0445325C9182600A10430 /* AssessmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0445225C9182600A10430 /* AssessmentController.swift */; };
 		09B06E1F25C7DDFC00AFBCA3 /* AddTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B06E1E25C7DDFC00AFBCA3 /* AddTransactionController.swift */; };
 		09BC671D25C05D14003DC9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BC671C25C05D14003DC9A4 /* Main.storyboard */; };
 		09BC672325C05FBB003DC9A4 /* login_illustration.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BC672225C05FBB003DC9A4 /* login_illustration.png */; };
@@ -135,6 +136,7 @@
 		0987C79825C3F96A009516F6 /* balancedAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balancedAllocation.png; sourceTree = "<group>"; };
 		0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aggressiveAllocation.png; sourceTree = "<group>"; };
 		0987C7A925C3FACA009516F6 /* conservativeAllocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conservativeAllocation.png; sourceTree = "<group>"; };
+		09A0445225C9182600A10430 /* AssessmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentController.swift; sourceTree = "<group>"; };
 		09B06E1E25C7DDFC00AFBCA3 /* AddTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionController.swift; sourceTree = "<group>"; };
 		09BC671C25C05D14003DC9A4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		09BC672225C05FBB003DC9A4 /* login_illustration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_illustration.png; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				094C452825C8110F00C61BB1 /* WalletTableViewController.swift */,
 				094C453425C82C6300C61BB1 /* HomeController.swift */,
 				094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */,
+				09A0445225C9182600A10430 /* AssessmentController.swift */,
 			);
 			path = "FinGrowth - Finance Manager";
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				09BC676825C11335003DC9A4 /* Wallet.swift in Sources */,
 				09BC676D25C11461003DC9A4 /* Transaction.swift in Sources */,
 				094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */,
+				09A0445325C9182600A10430 /* AssessmentController.swift in Sources */,
 				097F52F925AFE30E0033E127 /* AppDelegate.swift in Sources */,
 				09BC677225C11765003DC9A4 /* Stocks.swift in Sources */,
 				09D159D725C4495800085050 /* AssetsController.swift in Sources */,
