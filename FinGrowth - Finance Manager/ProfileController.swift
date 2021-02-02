@@ -35,6 +35,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     var imagePicker = UIImagePickerController()
     
     let userId = (Auth.auth().currentUser)?.uid
+    var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +70,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         editImageBtn.layer.cornerRadius = editImageBtn.frame.size.width / 2
         
         //--------------------------------Load data into view---------------------------------
-        var appDelegate = UIApplication.shared.delegate as! AppDelegate
         let user:User = appDelegate.user ?? User(username: "", dob: "\(Date.init())", risk: "")
         username_lbl.text = user.username
         
@@ -85,6 +85,22 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         // Set age value
         age_lbl.text = String(age)
         
+        //load profile image
+        let profileImageRef = Storage.storage().reference().child("users").child(userId!).child("profileImage.jpg")
+        profileImageRef.getData(maxSize: 10 * 1204 * 1204) { data, error in
+            if let error = error {
+                print("Image failed to retrieve, error: \(error)")
+            }
+            else{
+                self.profileImage.image = UIImage(data: data!)
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        let user:User = appDelegate.user ?? User(username: "", dob: "\(Date.init())", risk: "")
+
         // Load risk profile data
         switch user.riskProfile {
         case "noProfile":
@@ -107,19 +123,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         default:
             print("Invalid risk profile string")
         }
-        
-        //load profile image
-        let profileImageRef = Storage.storage().reference().child("users").child(userId!).child("profileImage.jpg")
-        profileImageRef.getData(maxSize: 10 * 1204 * 1204) { data, error in
-            if let error = error {
-                print("Image failed to retrieve, error: \(error)")
-            }
-            else{
-                self.profileImage.image = UIImage(data: data!)
-            }
-        }
-        
-        
     }
     
     // Add border, shadow and corner design to view

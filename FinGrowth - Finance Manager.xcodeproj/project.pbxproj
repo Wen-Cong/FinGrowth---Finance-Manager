@@ -25,6 +25,7 @@
 		094C454725C8697800C61BB1 /* transactionIcon-Entertainment.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C453F25C8697800C61BB1 /* transactionIcon-Entertainment.png */; };
 		094C454825C8697800C61BB1 /* transactionIcon-Transport.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C454025C8697800C61BB1 /* transactionIcon-Transport.png */; };
 		094C454D25C8807F00C61BB1 /* TransactionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */; };
+		0957ADB025C94D9700DDE72A /* maintanace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0957ADAF25C94D9600DDE72A /* maintanace.jpg */; };
 		095BE34425C2A46200F1ABCE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE34325C2A46200F1ABCE /* profile.png */; };
 		095BE35325C2AACC00F1ABCE /* edit_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE35225C2AACC00F1ABCE /* edit_profile.png */; };
 		095BE36125C2AC6800F1ABCE /* take_assessment.png in Resources */ = {isa = PBXBuildFile; fileRef = 095BE36025C2AC6800F1ABCE /* take_assessment.png */; };
@@ -110,6 +111,7 @@
 		094C453F25C8697800C61BB1 /* transactionIcon-Entertainment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Entertainment.png"; sourceTree = "<group>"; };
 		094C454025C8697800C61BB1 /* transactionIcon-Transport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transactionIcon-Transport.png"; sourceTree = "<group>"; };
 		094C454C25C8807F00C61BB1 /* TransactionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsController.swift; sourceTree = "<group>"; };
+		0957ADAF25C94D9600DDE72A /* maintanace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maintanace.jpg; sourceTree = "<group>"; };
 		095BE34325C2A46200F1ABCE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		095BE35225C2AACC00F1ABCE /* edit_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_profile.png; sourceTree = "<group>"; };
 		095BE36025C2AC6800F1ABCE /* take_assessment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_assessment.png; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		09BC677C25C11B03003DC9A4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0957ADAF25C94D9600DDE72A /* maintanace.jpg */,
 				09D159D125C448E800085050 /* analysis.jpg */,
 				0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */,
 				0987C7A925C3FACA009516F6 /* conservativeAllocation.png */,
@@ -478,6 +481,7 @@
 				0932F1FF25C69CC000555F93 /* walletIcon-Safe.png in Resources */,
 				09BC671D25C05D14003DC9A4 /* Main.storyboard in Resources */,
 				0987C7AB25C3FACA009516F6 /* conservativeAllocation.png in Resources */,
+				0957ADB025C94D9700DDE72A /* maintanace.jpg in Resources */,
 				094C454525C8697800C61BB1 /* transactionIcon-Others.png in Resources */,
 				094C453025C82B5D00C61BB1 /* income.png in Resources */,
 				09BC678325C11F30003DC9A4 /* cat-other.png in Resources */,

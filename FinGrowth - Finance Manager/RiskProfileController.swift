@@ -49,6 +49,10 @@ class RiskProfileController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
+    
     func loadNoProfileContent() {
         riskProfile.text = "No risk profile"
         let stringPath = Bundle.main.path(forResource: "noProfile", ofType: "jpg")
