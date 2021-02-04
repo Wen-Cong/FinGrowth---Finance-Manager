@@ -122,11 +122,11 @@ class RiskProfileController: UIViewController {
         contentView.layer.masksToBounds = true;
         contentView.layer.borderColor = UIColor(red: 0.55, green: 0.33, blue: 0.83, alpha: 1.00).cgColor
         contentView.layer.borderWidth = 1.0
+        
         // Add shadow
         scrollView.layer.masksToBounds = false
         scrollView.layer.shadowOffset = CGSize(width: 5, height: 5)
         scrollView.layer.shadowRadius = 5
         scrollView.layer.shadowOpacity = 0.5
-        scrollView.layer.shadowPath = UIBezierPath(rect: scrollView.bounds).cgPath
     }
 }
