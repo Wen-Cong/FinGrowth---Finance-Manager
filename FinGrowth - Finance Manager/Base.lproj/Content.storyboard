@@ -203,7 +203,7 @@
                                             <outlet property="cellView" destination="Alg-Le-gH4" id="GI8-7N-bqY"/>
                                             <outlet property="dateTimeLabel" destination="quP-Wi-g2R" id="L25-l0-OlH"/>
                                             <outlet property="titleLabel" destination="bhO-Nz-AGl" id="4DG-P7-Fwy"/>
-                                            <segue destination="fWh-Aw-G97" kind="show" identifier="TransactionDetails" id="Qjj-U5-ARv"/>
+                                            <segue destination="fWh-Aw-G97" kind="show" identifier="TransactionDetails" animates="NO" id="Qjj-U5-ARv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
