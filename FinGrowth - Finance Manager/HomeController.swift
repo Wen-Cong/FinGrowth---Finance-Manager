@@ -22,12 +22,14 @@ class HomeController:UIViewController {
     
     @IBOutlet weak var incomeIcon: UIImageView!
     @IBOutlet weak var expenseIcon: UIImageView!
+    @IBOutlet weak var NoTransactionImage: UIImageView!
     
     @IBOutlet weak var netWorthLabel: UILabel!
     @IBOutlet weak var currentMonthLabel: UILabel!
     @IBOutlet weak var incomeLabel: UILabel!
     @IBOutlet weak var expenseLabel: UILabel!
-
+    @IBOutlet weak var noTransactionLabel: UILabel!
+    
     @IBOutlet weak var transactionList: UITableView!
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -49,6 +51,18 @@ class HomeController:UIViewController {
         wallets = appDelegate.walletList
         stocks = appDelegate.stocksList
         self.transactionList.reloadData()
+        
+        // Add "Empty" Image if there is no transactions
+        if transactions.count == 0 {
+            let stringPath = Bundle.main.path(forResource: "empty", ofType: "jpg")
+            NoTransactionImage.image = UIImage(contentsOfFile: stringPath ?? "")
+            
+            noTransactionLabel.text = "You did not have any transaction currently."
+        }
+        else {
+            NoTransactionImage.image = nil
+            noTransactionLabel.text = ""
+        }
         
         // Calculate income & expenses
         var totalIncome = 0.0

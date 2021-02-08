@@ -48,8 +48,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         infoView.layer.shadowOffset = CGSize(width: 3, height: 3)
         infoView.layer.shadowRadius = 5
         infoView.layer.shadowOpacity = 0.5
-        infoView.layer.shadowPath = UIBezierPath(rect: infoView.bounds).cgPath
-
         
         // Circle profile image
         profileImage.layer.borderWidth = 1.5
@@ -136,7 +134,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         view.layer.shadowOffset = CGSize(width: 3, height: 3)
         view.layer.shadowRadius = 5
         view.layer.shadowOpacity = 0.5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
     }
     
     // Change profile image

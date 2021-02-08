@@ -61,6 +61,10 @@ class AddStocksController: UIViewController {
         messageLabel.text = ""
     }
     
+    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
+        view.endEditing(true)
+    }
+    
     @IBAction func addBtn(_ sender: Any) {
         // Check for empty field
         if (nameFld != nil && symbolFld != nil && qtyFld != nil && priceFld != nil && dateFld != nil){
@@ -131,10 +135,6 @@ class AddStocksController: UIViewController {
         }
     }
     
-    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
-        view.endEditing(true)
-    }
-    
     @objc func dateChanged(datePicker: UIDatePicker){
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
@@ -152,7 +152,6 @@ class AddStocksController: UIViewController {
         view.layer.shadowOffset = CGSize(width: 3, height: 3)
         view.layer.shadowRadius = 10
         view.layer.shadowOpacity = 0.5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
     }
     
     func applyTextFieldStyle(field:UITextField){

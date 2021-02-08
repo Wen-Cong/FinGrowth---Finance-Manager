@@ -25,11 +25,19 @@ class WalletTableViewController:UITableViewController{
         super.viewDidLoad()
         walletList = appDelegate.walletList
         self.tableView.reloadData() //Refresh data
+        
+        //Add tap gesture to dismiss keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(WalletTableViewController.viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         walletList = appDelegate.walletList
         self.tableView.reloadData()
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
+        view.endEditing(true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

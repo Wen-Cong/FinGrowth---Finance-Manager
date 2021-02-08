@@ -61,6 +61,10 @@ class AddTransactionController: UIViewController, UIPickerViewDelegate, UIPicker
         typeFld.inputView = typePickerView
         
         dismissPickerView()
+        
+        //Add tap gesture to dismiss keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddTransactionController.viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -82,13 +86,16 @@ class AddTransactionController: UIViewController, UIPickerViewDelegate, UIPicker
         view.layer.shadowOffset = CGSize(width: 3, height: 3)
         view.layer.shadowRadius = 10
         view.layer.shadowOpacity = 0.5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
     }
     
     func applyTextFieldStyle(field:UITextField){
         field.layer.borderColor = UIColor.gray.cgColor
         field.layer.borderWidth = 1.0
         field.layer.cornerRadius = 10
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
+        view.endEditing(true)
     }
     
     @IBAction func addBtn(_ sender: Any) {

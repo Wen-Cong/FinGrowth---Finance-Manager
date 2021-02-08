@@ -75,7 +75,6 @@ class TransactionDetailsController: UIViewController {
         view.layer.shadowOffset = CGSize(width: 3, height: 3)
         view.layer.shadowRadius = 5
         view.layer.shadowOpacity = 0.5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
     }
     
     @IBAction func deletebtn(_ sender: Any) {

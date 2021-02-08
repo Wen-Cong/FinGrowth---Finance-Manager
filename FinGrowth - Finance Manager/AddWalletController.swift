@@ -43,6 +43,10 @@ class AddWalletController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         addBtn.layer.cornerRadius = 22
         
         iconPicker.delegate = self
+        
+        //Add tap gesture to dismiss keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddWalletController.viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +65,10 @@ class AddWalletController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         view.layer.shadowOffset = CGSize(width: 3, height: 3)
         view.layer.shadowRadius = 10
         view.layer.shadowOpacity = 0.5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
+        view.endEditing(true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

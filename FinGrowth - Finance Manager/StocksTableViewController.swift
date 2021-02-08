@@ -25,11 +25,19 @@ class StocksTableViewController:UITableViewController {
         super.viewDidLoad()
         stocksList = appDelegate.stocksList
         self.tableView.reloadData() //Refresh data
+        
+        //Add tap gesture to dismiss keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(StocksTableViewController.viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         stocksList = appDelegate.stocksList
         self.tableView.reloadData()
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UIGestureRecognizer){
+        view.endEditing(true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

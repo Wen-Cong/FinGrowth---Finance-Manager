@@ -72,6 +72,7 @@
 		09D159D725C4495800085050 /* AssetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D159D625C4495800085050 /* AssetsController.swift */; };
 		09D159DC25C4545B00085050 /* AddWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D159DB25C4545B00085050 /* AddWalletController.swift */; };
 		09D4F53825C2545E002F383A /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4F53725C2545E002F383A /* ProfileController.swift */; };
+		09DFF7A025CC04D300250F77 /* empty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09DFF79F25CC04D300250F77 /* empty.jpg */; };
 		1264016E7476DEB6551424E4 /* libPods-FinGrowth - Finance Manager-FinGrowth - Finance ManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A616131774C74E4B4B76D62D /* libPods-FinGrowth - Finance Manager-FinGrowth - Finance ManagerUITests.a */; };
 		3774A2A5944994BB64490610 /* libPods-FinGrowth - Finance Manager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C75C3CF18F4219D92EE4D017 /* libPods-FinGrowth - Finance Manager.a */; };
 		9A322EDE77F8F6746D07B816 /* libPods-FinGrowth - Finance ManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83E005E30071F163AA28696 /* libPods-FinGrowth - Finance ManagerTests.a */; };
@@ -166,6 +167,7 @@
 		09D159D625C4495800085050 /* AssetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsController.swift; sourceTree = "<group>"; };
 		09D159DB25C4545B00085050 /* AddWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletController.swift; sourceTree = "<group>"; };
 		09D4F53725C2545E002F383A /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		09DFF79F25CC04D300250F77 /* empty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empty.jpg; sourceTree = "<group>"; };
 		0DB158A6FF36AACCFDEE6F59 /* Pods-FinGrowth - Finance ManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance ManagerTests.release.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance ManagerTests/Pods-FinGrowth - Finance ManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		1E676C154E73C18DA13EB2F2 /* Pods-FinGrowth - Finance Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance Manager.release.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance Manager/Pods-FinGrowth - Finance Manager.release.xcconfig"; sourceTree = "<group>"; };
 		62E73199BA30F2E3746DBA1B /* Pods-FinGrowth - Finance ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinGrowth - Finance ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-FinGrowth - Finance ManagerTests/Pods-FinGrowth - Finance ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		09BC677C25C11B03003DC9A4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09DFF79F25CC04D300250F77 /* empty.jpg */,
 				0957ADAF25C94D9600DDE72A /* maintanace.jpg */,
 				09D159D125C448E800085050 /* analysis.jpg */,
 				0987C7A825C3FACA009516F6 /* aggressiveAllocation.png */,
@@ -502,6 +505,7 @@
 				095BE34425C2A46200F1ABCE /* profile.png in Resources */,
 				0987C79B25C3F96A009516F6 /* balancedAllocation.png in Resources */,
 				095BE36125C2AC6800F1ABCE /* take_assessment.png in Resources */,
+				09DFF7A025CC04D300250F77 /* empty.jpg in Resources */,
 				095BE36D25C2C26A00F1ABCE /* balancedInvestor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
