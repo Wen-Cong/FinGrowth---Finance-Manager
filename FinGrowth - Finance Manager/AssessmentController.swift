@@ -170,7 +170,7 @@ class AssessmentController: UIViewController,UIPickerViewDelegate, UIPickerViewD
                 })
                 
             }
-            else if totalScore < 40 {
+            else if totalScore <= 40 {
                 let profile = "aggressive"
                 // Update current app data
                 appDelegate.user?.riskProfile = profile
